@@ -1,3 +1,4 @@
 module.exports = {
-  CommentTruncationAttack: require('./lib/CommentTruncationAttack')
+  CommentTruncationAttack: require('./lib/CommentTruncationAttack'),
+  ModifyAttack: require('./lib/modifyAttack')
 }
