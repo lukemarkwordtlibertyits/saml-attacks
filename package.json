@@ -1,0 +1,19 @@
+{
+  "name": "saml-attacks",
+  "version": "1.0.0",
+  "description": "Common saml attacks for penetration testing.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukemarkwordtlibertyits/saml-attacks.git"
+  },
+  "author": "Luke Markwordt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lukemarkwordtlibertyits/saml-attacks/issues"
+  },
+  "homepage": "https://github.com/lukemarkwordtlibertyits/saml-attacks#readme"
+}
