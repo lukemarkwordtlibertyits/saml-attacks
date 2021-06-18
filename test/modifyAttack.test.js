@@ -46,16 +46,6 @@ describe('Invalid Input', () => {
       expect(error).toEqual('Invalid Modified Field')
     }
   })
-
-  it('Invalid Saml Response', async () => {
-    const invalid_saml = fs.readFileSync('test/resources/invalid_saml.xml', 'utf8')
-    try {
-      await ModifyAttack(invalid_saml, 'uid', 'modified')
-      fail('An error was expected')
-    } catch (error) {
-      expect(error).toEqual('Invalid Saml Response')
-    }
-  })
 })
 
 describe('Corner Cases', () => {
