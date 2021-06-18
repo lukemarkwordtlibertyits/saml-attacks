@@ -4,7 +4,7 @@ Common saml attacks for penetration testing.
 
 ## Supported Attacks
 
-- [ ] Modify
+- [x] Modify
 - [ ] Comment Truncation
 - [ ] XSW 1
 - [ ] XSW 2
@@ -16,6 +16,12 @@ Common saml attacks for penetration testing.
 - [ ] XSW 8
 
 ## Usage
+
+**modifyAttack**
+
+```js
+await ModifyAttack(xml, 'uid', 'modified')
+```
 
 With puppeteer proxy
 
