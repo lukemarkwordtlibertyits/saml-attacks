@@ -20,7 +20,7 @@ describe('Happy Path', () => {
 })
 
 describe('Comment Trunctation', () => {
-  let comment_truncation_file;
+  let comment_truncation_file
 
   beforeEach(() => {
     comment_truncation_file = fs.readFileSync('test/resources/comment_truncation.xml', 'utf8')
