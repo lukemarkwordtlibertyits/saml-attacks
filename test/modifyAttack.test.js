@@ -13,9 +13,21 @@ describe('Happy Path', () => {
   beforeEach(() => {
     attribute_modify_file = fs.readFileSync('test/resources/attribute_modify.xml', 'utf8')
   })
-  it('Happy Path', async () => {
+  it('Modify', async () => {
     const modified_saml = await ModifyAttack(xml_file, 'uid', 'modified')
     expect(modified_saml).toEqual(attribute_modify_file)
+  })
+})
+
+describe('Comment Trunctation', () => {
+  let comment_truncation_file;
+
+  beforeEach(() => {
+    comment_truncation_file = fs.readFileSync('test/resources/comment_truncation.xml', 'utf8')
+  })
+  it('Happy Path', async () => {
+    const modified_saml = await ModifyAttack(xml_file, 'uid', 'te<!-- attack -->st')
+    expect(modified_saml).toEqual(comment_truncation_file)
   })
 })
 

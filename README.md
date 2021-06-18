@@ -17,10 +17,20 @@ Common saml attacks for penetration testing.
 
 ## Usage
 
-**modifyAttack**
+**Modify Attack**
 
 ```js
-await ModifyAttack(xml, 'uid', 'modified')
+const { ModifyAttack } = require("saml-attacks");
+
+constant modifiedSaml = await ModifyAttack(xml, 'uid', 'modified')
+```
+
+**Comment Truncation Attack**
+
+```js
+const { ModifyAttack } = require("saml-attacks");
+
+constant modifiedSaml = await ModifyAttack(xml, 'uid', 'te<!-- attack -->st')
 ```
 
 With puppeteer proxy
